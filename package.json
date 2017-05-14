@@ -1,32 +1,39 @@
 {
-  "name": "reactTraining",
+  "name": "ReactTutorial",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "webpack -d --watch",
-    "start": "webpack-dev-server --port 7531",
-    "production": "webpack -p"
+  "main": "server/server.js",
+  "engines": {
+    "node": ">=4"
   },
-  "author": "Mcasanova",
-  "license": "ISC",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node .",
+    "posttest": "npm run lint && nsp check"
+  },
   "dependencies": {
-    "act": "0.0.6",
-    "react": "^15.4.0",
-    "react-dom": "^15.4.0",
-    "react-router": "^4.0.0",
-    "react-router-dom": "^4.0.0-beta.8"
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "helmet": "^1.3.0",
+    "loopback-boot": "^2.6.5",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^2.0.0",
+    "loopback-datasource-juggler": "^2.39.0",
+    "loopback-component-explorer": "^2.4.0",
+    "loopback": "^2.22.0"
   },
   "devDependencies": {
-    "babel-core": "^6.24.1",
-    "babel-loader": "^6.4.1",
-    "babel-preset-env": "^1.4.0",
-    "babel-preset-es2015": "^6.22.0",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^0.28.1",
-    "html-webpack-plugin": "^2.28.0",
-    "style-loader": "^0.17.0",
-    "webpack": "^1.15.0",
+    "eslint": "^3.17.1",
+    "eslint-config-loopback": "^8.0.0",
+    "nsp": "^2.1.0"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "UNLICENSED",
+  "description": "ReactTutorial"
+}
+",
     "webpack-dev-server": "^1.16.5"
   }
 }

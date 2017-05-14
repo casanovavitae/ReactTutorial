@@ -4,19 +4,7 @@ import Navbar from './global/NavbarComponent';
 import Home from './home/home';
 import Main from './main/main';
 import LikeComponent from './like/LikeComponent';
-
-const styles = {
-  root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around',
-  },
-  gridList: {
-    width: 500,
-    height: 450,
-    overflowY: 'auto',
-  },
-};
+import ResumeComponent from './resume/ResumeComponent';
 
 const tilesData = [
   {
@@ -66,6 +54,8 @@ class ClientComponent extends React.Component {
                         <Route path="/home" component={Home}/>
                         <Route path="/main" component={Main}/>
                         <Route path="/Like" component={LikeComponent}/>
+                        <Route path="/Resume" component={ResumeComponent}/>
+                        
                     </div>
                 </Router>
             </div>
